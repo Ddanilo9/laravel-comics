@@ -1,10 +1,49 @@
 <header>
-    <div>
-        <ul>
-            <li>a</li>
-            <li>s</li>
-            <li>a</li>
-            <li>a</li>
-        </ul>
+    <div class="container">
+         <img src="{{asset('img/dc-logo.png')}}" alt="">
+
+    @php
+
+       $links = [
+        [
+            'text' => 'Charachters'
+        ],
+        [
+            'text' => 'comics'
+        ],
+        [
+            'text' => 'movies'
+        ],
+        [
+            'text' => 'tv'
+        ],
+        [
+            'text' => 'games'
+        ],
+        [
+            'text' => 'collectibles'
+        ],
+        [
+            'text' => 'video'
+        ],
+        [
+            'text' => 'fans'
+        ],
+        [
+            'text' => 'news'
+        ],
+        [
+            'text' => 'shop'
+        ],
+    ];      
+    @endphp
+
+         <ul class="nav">
+            @foreach ($links as $link)
+               <li class="nav-link">
+                 <a href="">{{$link['text']}}</a>
+             </li> 
+            @endforeach
+         </ul>
     </div>
-</header>
+ </header>

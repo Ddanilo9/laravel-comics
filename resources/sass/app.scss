@@ -1,14 +1,7 @@
-//
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import './partials/index';
 
-body{
-    background-color: aqua;
-}
+@import './header.scss';
 
-h1{
-    color: red;
-}
+
+
+

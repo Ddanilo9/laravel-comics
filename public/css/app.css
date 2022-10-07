@@ -4,11 +4,65 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: aqua;
+ul,
+li,
+menu {
+  list-style: none;
 }
 
-h1 {
-  color: red;
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+.app {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  height: 100vh;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 10px 0;
+}
+
+.container img {
+  aspect-ratio: 1/1;
+  width: 70px;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav .nav-link a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav .nav-link a:hover {
+  border-bottom: 3px solid #0282F9;
+  padding-bottom: 33px;
+}
+
+.nav .nav-link:hover {
+  color: #0282F9;
 }
 
