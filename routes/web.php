@@ -40,4 +40,5 @@ Route::get('/prodotti/{id}',function($id){ //rotta prodotti singoli
    }
    
    // dd($card);
-})->where('id', '[0-9]+');
+})->where('id', '[0-9]+')
+->name('prodotto');

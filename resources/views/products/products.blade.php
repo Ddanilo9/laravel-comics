@@ -32,10 +32,12 @@
     <div class="jumbo">
     </div>
     <div class="container box-cards">
-      @foreach ($products as $card)
+      @foreach ($products as $key => $card)
          <div class="cards">
+          <a href="{{route('prodotto', ['id' => $key])}}">
           <img src="{{$card['thumb']}}" :alt="">
           <h4>{{$card['series']}}</h4>
+          </a>
         </div> 
       @endforeach
      <button class="current-series">Current Series</button> 
