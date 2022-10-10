@@ -1,0 +1,93 @@
+main .box-comic-card {
+    color: black;
+    .blue-band {
+        background-color: #0282f9;
+        height: 50px;
+        .container {
+            position: relative;
+            img {
+                position: absolute;
+                bottom: -25px;
+                left: 20px;
+                border: 1px solid white;
+                width: 15%;
+            }
+        }
+    }
+}
+.jumbo {
+    background-image: url(../img/jumbotron.jpg);
+    height: 280px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+
+        .col-70 {
+            flex-basis: 70%;
+            padding: 40px 0;
+            h3{
+                color: #003f5e;
+                text-transform: uppercase;
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            p{
+                margin-top: 10px;
+            }
+        }
+        .col-30 {
+            flex-basis: 30%;
+        }
+        .col-80 {
+            flex-basis: 80%;
+            background-color: #55ba59;
+            border-right: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            color: white;
+        }
+        .col-20 {
+            flex-basis: 20%;
+            background-color: #55ba59;
+            padding: 10px;
+            color: white;
+        }
+    }
+}
+
+.comics-about{
+    color: black;
+    background-color: #f6f6f6;
+    .container{
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 0 0.5rem;
+        .row{
+            display: flex;
+            .col-50{
+                flex-basis: 50%;
+            }
+            .col-70 {
+                flex-basis: 70%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px;
+            }
+            .col-30 {
+                flex-basis: 30%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px;
+            }
+        }
+    }
+}
