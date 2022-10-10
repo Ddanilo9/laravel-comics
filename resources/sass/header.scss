@@ -32,3 +32,17 @@
         }
     }
 }
+
+.cards{
+    padding: 10px;
+    cursor: pointer;
+    
+    img{
+        aspect-ratio: 1/1;
+    }
+
+    h4{
+        font-size: 12px;
+        font-weight: 300;
+    }
+}

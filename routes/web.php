@@ -24,3 +24,7 @@ Route::get('/prodotti', function () {
 
    return view('products', $data);
 });
+
+Route::get('/prodotti/{id}',function($id){ //rotta prodotti singoli
+   return $id;
+});

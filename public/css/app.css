@@ -40,7 +40,6 @@ h4 {
   align-items: center;
   padding: 10px 0 10px 0;
 }
-
 .container img {
   aspect-ratio: 1/1;
   width: 70px;
@@ -50,50 +49,55 @@ h4 {
   display: flex;
   gap: 1rem;
 }
-
 .nav .nav-link a {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 500;
 }
-
 .nav .nav-link a:hover {
   border-bottom: 3px solid #0282F9;
   padding-bottom: 33px;
 }
-
 .nav .nav-link:hover {
   color: #0282F9;
 }
 
+.cards {
+  padding: 10px;
+  cursor: pointer;
+}
+.cards img {
+  aspect-ratio: 1/1;
+}
+.cards h4 {
+  font-size: 12px;
+  font-weight: 300;
+}
+
 .upper-up {
-  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+  background-image: url(../../img/footer-bg.jpg);
   color: white;
 }
 
 .footer-links {
   display: flex;
-  background-image: url(/images/dc-logo-bg.png?f4404ce9dc132a08a47f19e3f73f1417);
+  background-image: url(../img/dc-logo-bg.png);
   background-position: right;
   background-size: 40%;
   background-repeat: no-repeat;
 }
-
 .footer-links .container-links {
   padding: 35px 0 35px 0;
 }
-
 .footer-links .container-links ul {
   color: #6E6E6E;
   margin-right: 20px;
   margin-bottom: 10px;
 }
-
 .footer-links .container-links ul a {
   font-size: 12px;
   font-weight: 600;
 }
-
 .footer-links h4 {
   padding-bottom: 10px;
 }
@@ -101,13 +105,11 @@ h4 {
 .bottom-side {
   background-color: #303030;
 }
-
 .bottom-side .contact-us {
   display: flex;
   justify-content: space-between;
   padding: 20px 0 20px 0;
 }
-
 .bottom-side .contact-us button {
   border: 2px solid #0282F9;
   background-color: transparent;
@@ -117,20 +119,99 @@ h4 {
   cursor: pointer;
   font-weight: 600;
 }
-
 .bottom-side .contact-us .socials {
   display: flex;
   align-items: center;
 }
-
 .bottom-side .contact-us .socials h4 {
   color: #0282F9;
   margin-right: 20px;
 }
-
 .bottom-side .contact-us ul {
   display: flex;
   gap: 10px;
 }
 
+main {
+  color: white;
+}
+main .main-up {
+  background-color: black;
+}
+main .main-up .jumbo {
+  background-image: url(../img/jumbotron.jpg);
+  height: 280px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main .main-up .box-cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding-top: 25px;
+  position: relative;
+}
+main .main-up .box-cards .current-series {
+  top: -12px;
+  position: absolute;
+  left: 0;
+  background-color: #0282F9;
+  padding: 5px;
+  color: white;
+  text-transform: uppercase;
+  width: 160px;
+  border: none;
+  font-weight: 700;
+}
+main .main-up .button {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+main .main-up .button button {
+  background-color: #0282F9;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 160px;
+  font-size: 12px;
+}
+main .main-down {
+  background-color: #0282F9;
+  height: 125px;
+  display: flex;
+  align-items: center;
+}
+main .main-down .menu {
+  display: flex;
+  justify-content: space-between;
+}
+main .main-down .menu .menu-links {
+  display: flex;
+  align-items: center;
+}
+main .main-down .menu .menu-links:nth-child(5) img {
+  width: 100px;
+}
+main .main-down .menu .menu-links a {
+  display: flex;
+  align-items: center;
+}
+main .main-down .menu .menu-links a img {
+  max-width: 20%;
+  margin-right: 8px;
+}
 
+.cards {
+  padding: 10px;
+  cursor: pointer;
+}
+.cards img {
+  aspect-ratio: 1/1;
+}
+.cards h4 {
+  font-size: 12px;
+  font-weight: 300;
+}
