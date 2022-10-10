@@ -6,7 +6,8 @@
          'text' => 'Charachters'
      ],
      [
-         'text' => 'comics'
+         'text' => 'comics',
+         'routeName' => 'prodotti'
      ],
      [
          'text' => 'movies'
@@ -39,7 +40,7 @@
          <ul class="nav">
             @foreach ($links as $link)
                <li class="nav-link">
-                 <a href="">{{$link['text']}}</a>
+                 <a href="{{isset($link['routeName']) ? $link['routeName'] : '/' }}">{{$link['text']}}</a>
              </li> 
             @endforeach
          </ul>

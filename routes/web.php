@@ -22,9 +22,22 @@ Route::get('/prodotti', function () {
       'products' => config('cards'),
    ];
 
-   return view('products', $data);
-});
+   return view('products.products', $data);
+})->name('prodotti');
 
 Route::get('/prodotti/{id}',function($id){ //rotta prodotti singoli
-   return $id;
-});
+   
+   $cards = config('cards');
+   if($id < count($cards)) {
+      $card = $cards[$id];
+      $data = [
+         'card' => $card
+      ];
+
+      return view('products.show',$data); //home di prova
+   }  else {
+      abort(404);
+   }
+   
+   // dd($card);
+})->where('id', '[0-9]+');

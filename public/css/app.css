@@ -34,13 +34,13 @@ h4 {
   text-transform: uppercase;
 }
 
-.container {
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0 10px 0;
 }
-.container img {
+header .container img {
   aspect-ratio: 1/1;
   width: 70px;
 }
@@ -75,7 +75,7 @@ h4 {
 }
 
 .upper-up {
-  background-image: url(../../img/footer-bg.jpg);
+  background-image: url(../img/footer-bg.jpg);
   color: white;
 }
 
@@ -130,6 +130,10 @@ h4 {
 .bottom-side .contact-us ul {
   display: flex;
   gap: 10px;
+}
+.bottom-side .contact-us ul li a img {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 main {
