@@ -91,11 +91,12 @@ main .box-comic-card {
 
         .row {
             display: flex;
-            border-bottom: 1px solid rgb(210, 209, 209);
+            
 
             .col-50 {
                 flex-basis: 50%;
                 padding-right: 30px;
+                
             }
 
             .col-70 {
@@ -104,6 +105,7 @@ main .box-comic-card {
                 align-items: center;
                 padding: 5px;
                 flex-wrap: wrap;
+                border-bottom: 1px solid rgb(210, 209, 209);
                 p{
                     color: #0282f9;
                     cursor: pointer;
@@ -116,6 +118,7 @@ main .box-comic-card {
                 justify-content: space-between;
                 align-items: center;
                 padding:20px 5px;
+                border-bottom: 1px solid rgb(210, 209, 209);
             }
         }
     }

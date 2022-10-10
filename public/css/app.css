@@ -291,7 +291,6 @@ main .box-comic-card .blue-band .container img {
 }
 .comics-about .container .row {
   display: flex;
-  border-bottom: 1px solid rgb(210, 209, 209);
 }
 .comics-about .container .row .col-50 {
   flex-basis: 50%;
@@ -303,6 +302,7 @@ main .box-comic-card .blue-band .container img {
   align-items: center;
   padding: 5px;
   flex-wrap: wrap;
+  border-bottom: 1px solid rgb(210, 209, 209);
 }
 .comics-about .container .row .col-70 p {
   color: #0282f9;
@@ -314,6 +314,7 @@ main .box-comic-card .blue-band .container img {
   justify-content: space-between;
   align-items: center;
   padding: 20px 5px;
+  border-bottom: 1px solid rgb(210, 209, 209);
 }
 .comics-about span {
   color: #003f5e;

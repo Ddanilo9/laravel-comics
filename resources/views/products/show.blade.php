@@ -29,7 +29,7 @@
                     <p>{{$card['description']}}</p>
                 </div>
                 <div class="col-30">
-                    <img src="{{asset('img/adv.jpg')}}" alt="">
+                    <img src="{{asset('img/adv.png')}}" alt="">
                     <span>ADVERTISEMENT</span>
                 </div>
             </div>
