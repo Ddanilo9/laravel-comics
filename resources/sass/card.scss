@@ -1,10 +1,13 @@
 main .box-comic-card {
     color: black;
+
     .blue-band {
         background-color: #0282f9;
         height: 50px;
+
         .container {
             position: relative;
+
             img {
                 position: absolute;
                 bottom: -25px;
@@ -15,6 +18,7 @@ main .box-comic-card {
         }
     }
 }
+
 .jumbo {
     background-image: url(../img/jumbotron.jpg);
     height: 280px;
@@ -29,20 +33,26 @@ main .box-comic-card {
 
         .col-70 {
             flex-basis: 70%;
-            padding: 40px 0;
-            h3{
+            padding: 50px 0;
+
+            h3 {
                 color: #003f5e;
                 text-transform: uppercase;
-                font-size: 18px;
+                font-size: 20px;
                 margin-bottom: 10px;
             }
-            p{
+
+            p {
                 margin-top: 10px;
+                color: #565657;
             }
         }
+
         .col-30 {
             flex-basis: 30%;
+            padding: 50px 0;
         }
+
         .col-80 {
             flex-basis: 80%;
             background-color: #55ba59;
@@ -50,44 +60,70 @@ main .box-comic-card {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px;
+            padding: 10px 25px;
             color: white;
+            span{
+                color: #9df596;
+            }
+            .price{
+                color: white;
+            }
         }
+
         .col-20 {
             flex-basis: 20%;
             background-color: #55ba59;
-            padding: 10px;
+            padding: 10px 25px;
             color: white;
         }
     }
 }
 
-.comics-about{
+.comics-about {
     color: black;
     background-color: #f6f6f6;
-    .container{
+    padding-top: 50px;
+    padding-bottom: 70px;
+    .container {
         max-width: 1024px;
         margin: 0 auto;
         padding: 0 0.5rem;
-        .row{
+
+        .row {
             display: flex;
-            .col-50{
+            border-bottom: 1px solid rgb(210, 209, 209);
+
+            .col-50 {
                 flex-basis: 50%;
+                padding-right: 30px;
             }
+
             .col-70 {
                 flex-basis: 70%;
                 display: flex;
-                justify-content: space-between;
                 align-items: center;
                 padding: 5px;
+                flex-wrap: wrap;
+                p{
+                    color: #0282f9;
+                    cursor: pointer;
+                }
             }
+
             .col-30 {
                 flex-basis: 30%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding: 5px;
+                padding:20px 5px;
             }
         }
+    }
+    span{
+        color: #003f5e;
+    }
+    h3{
+        color: #003f5e;
+        font-size: 20px;
     }
 }

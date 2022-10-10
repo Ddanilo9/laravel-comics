@@ -19,17 +19,18 @@
                     <h3>{{$card['title']}}</h3>
                     <div class="row">
                         <div class="col-80">
-                            <span>US Price: {{$card['price']}}</span>
-                            <span>Available</span>
+                            <span>U.S. Price: <span class="price">{{$card['price']}}</span></span>
+                            <span>AVAILABLE</span>
                         </div>
                         <div class="col-20">
-                            Check Availibility
+                            Check availability
                         </div>
                     </div>
                     <p>{{$card['description']}}</p>
                 </div>
                 <div class="col-30">
-                    2
+                    <img src="{{asset('img/adv.jpg')}}" alt="">
+                    <span>ADVERTISEMENT</span>
                 </div>
             </div>
         </div>
@@ -41,18 +42,22 @@
                     <h3>Talent</h3>
                     <div class="row">
                         <div class="col-30">
-                            Art by:
+                            <span>Art by:</span> 
                         </div>
                         <div class="col-70">
-                            uno, 2, cndsj, cds
+                            @foreach ($card['artists'] as $item)
+                            <p> {{ $item }}, </p>                    
+                            @endforeach
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-30">
-                            Written by:
+                            <span>Written by:</span> 
                         </div>
                         <div class="col-70">
-                            cdsac  hudsi hvuish fusahd
+                            @foreach ($card['writers'] as $item)
+                            <p> {{ $item }}, </p>                    
+                            @endforeach 
                         </div>
                     </div>
                 </div>
@@ -60,26 +65,26 @@
                     <h3>Specs</h3>
                     <div class="row">
                         <div class="col-30">
-                            Series:
+                            <span>Series:</span> 
                         </div>
                         <div class="col-70">
-                            uno, 2, cndsj, cds
+                            <p>{{$card['series']}}</p> 
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-30">
-                            US Price
+                            <span>US Price</span> 
                         </div>
                         <div class="col-70">
-                            cdsac  hudsi hvuish fusahd
+                            <span>{{$card['price']}}</span> 
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-30">
-                            On sale date
+                            <span>On sale date</span> 
                         </div>
                         <div class="col-70">
-                            cdsac  hudsi hvuish fusahd
+                            <span>{{$card['sale_date']}}</span> 
                         </div>
                     </div>
                 </div>
